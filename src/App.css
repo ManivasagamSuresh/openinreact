@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+.poppins-c{
+  font-family: 'Poppins', sans-serif;
+}
+.monteserat-c{
+  font-family: 'Montserrat', sans-serif;
+}
+.lato-c{
+  font-family: 'Lato', sans-serif;
+}
+.figtree-c{
+  font-family: 'Figtree', sans-serif;
+}
+.openSans-c{
+  font-family: 'Open Sans', sans-serif;
+}
+.flexP{
+  flex: 1.2;
+}
+.flexCustomDashboard{
+flex:3.5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media screen and (max-width:1024px) {
+  .flexCustomDashboard{
+    width: 100%;
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.stickyTop{
+  position: fixed;
+  /* top: calc(100vh - 48px); */
+  bottom: 0;
+  width: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Line{
+  position: relative;
 }
-
-.App-link {
-  color: #61dafb;
+.Line::after{
+  content: "";
+  width: 100%;
+  height : 3px;
+  background: #858585 ;
+  opacity: 50%;
+  position: absolute;
+  left: 0;
+  bottom:-9px;
+  transition: 0s;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.LineBlue{
+  position: relative;
+}
+.LineBlue::after{
+  content: "";
+  width: 100%;
+  height : 3px;
+  background: #3F84F8 ;
+  position: absolute;
+  left: 0;
+  bottom:-8px;
+  transition: 0s;
 }
